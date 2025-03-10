@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ORACLE_USER="exam231"
+ORACLE_PASS="exam231"
+ORACLE_DB="172.16.50.33/FISAT"
+
+SQL_SCRIPT="script.sh"
+
+sqlplus -s "$ORACLE_USER/$ORACLE_PASS@$ORACLE_DB" << EOF > error.log 2 > $1
+SET AUTOCOMMIT ON; 
+WHENEVER SQLERROR EXIT SQL.SQLCODE; 
+SPOOL output.log;
+
+@${SQL_SCRIPT}
+
+SPOOL OFF;
+EXIT;
+EOF
+
+
