@@ -16,14 +16,10 @@ module AND_Gate_tb;
   
   initial 
     begin
-      A <= 0;
-      B <= 0;
-      $monitor ("A=%0b B=%0b Y=%0b", A, B, Y);
-      for (i=0; i< 4; i= i + 1)
-        begin
-          {A, B} = i;
-      #10;
-        end 
+      A = 0; B = 0;
+      #5A = 0; B = 0;
+      #5A = 1; B=0;
+      #5A = 1; B=1;
     end
    
 endmodule
