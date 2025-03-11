@@ -5,7 +5,7 @@
   * [W3 TUTORIAL](https://www.w3schools.com/sql/)
 ### 2025
   * Mar-11 :
-      1. Created Function totalcustomers - function.sql
-      2. Used it in - pl_sql_page16.sql
+      1. Created Function totalcustomers - [function.sql](https://github.com/Baron-Dirac/btech_s4/blob/main/DBMS/function.sql)
+      2. Used it in - [pl_sql_page16.sql](https://github.com/Baron-Dirac/btech_s4/blob/main/DBMS/pl_sql_page16.sql)
       3. 
   * 
